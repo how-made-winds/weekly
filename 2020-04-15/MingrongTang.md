@@ -3,13 +3,16 @@
 1. 将实体作为词汇添加进jieba分词词典，对句子和路径进行分词，分词粒度为cut_all---结果为
 2. 将路径中的实体和关系分开，分别计算和问题的相似度ent_score,rel_score;最后的得分为（a*ent_score+rel_score+old_score)/(a+1+1)---a为1.5时结果为0.678
 模型融合融合pred_sim和pred_class两个文件，且在每个文件中一个问题有且只有一个预测路径，模型融合上限为0.7527
-<br>
+
+<br/>
 
 ## 为catboost训练更多数据
 catboost可以融合ok_sim和ok_class两个文件，每个文件中一个问题对应多个预测路径，模型融合上限为
+
 <br>
 
 ## 复习基础知识
+
 <br>
 
 ## 下周工作
